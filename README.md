@@ -1,2 +1,2 @@
 # Python
-All these programs are just for my practice. Any comments to improve the version gladly accepted
+All these programs are just for my practice. Appreciate any comments to improve the version. 
