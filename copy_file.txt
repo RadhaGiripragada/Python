@@ -1,0 +1,18 @@
+from sys import argv
+from os.path import exists
+
+script, source_file, dest_file = argv
+
+print "copying from %s to %s" %(source_file, dest_file)
+
+#check in dest file already exits...take permission to override
+if exists(dest_file):
+	print "%s already exits ...Do you want to override"
+	print "hit enter to override or Cntrl+c to quit"
+	raw_input()
+
+with open(source_file,"r") as in_fd:
+	in_data = in_fd.read()
+
+with open(dest_file,"w") as out_fd:
+	out_fd.write(in_data)
